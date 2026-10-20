@@ -22,8 +22,7 @@ An end-to-end lossy image compression framework integrating **Discrete Wavelet T
 ├── wavelet demp.py           # Interactive visual demo (Original vs Reconstructed)
 ├── final_research_results.csv# Benchmark results dataset across all configurations
 ├── rate_distortion_curve.png # Rate-Distortion curves comparing db1, db2, and db4
-├── requirements.txt          # Python dependencies
-└── *.docx / *.pdf            # Research paper and academic project reports
+└── requirements.txt          # Python dependencies
 ```
 
 ---
