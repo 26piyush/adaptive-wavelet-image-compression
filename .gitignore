@@ -19,3 +19,9 @@ ENV/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Documents, research reports, and extra local images (kept local only)
+*.docx
+*.pdf
+*.jpeg
+*.jpg
