@@ -2,11 +2,9 @@
 
 An end-to-end lossy image compression framework integrating **Discrete Wavelet Transform (DWT)**, **Bayesian Thresholding (BayesShrink)**, **Variance-Driven Adaptive Quantization**, and **Physical Bitstream Serialization** using **Run-Length Encoding (RLE)** and **Canonical Huffman Coding**.
 
-Developed as an Embedded Project Component (EPJ) for **CSE2009 – Soft Computing**, School of Computer Science and Engineering, VIT-AP University.
-
 ---
 
-## 🌟 Key Features
+## Key Features
 
 - **Multi-Resolution Analysis**: Decomposes images using Daubechies orthogonal wavelets (`db1`, `db2`, `db4`) across multiple decomposition levels (Levels 1–3).
 - **BayesShrink Soft Thresholding**: Calculates Bayesian subband thresholds based on noise standard deviation ($\sigma_n$) and signal standard deviation ($\sigma_x$) to suppress noise and sparsify detail subbands.
@@ -16,7 +14,7 @@ Developed as an Embedded Project Component (EPJ) for **CSE2009 – Soft Computin
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 ├── wavelet_codec.py          # Standalone CLI binary compressor & decompressor (.bin)
@@ -30,7 +28,7 @@ Developed as an Embedded Project Component (EPJ) for **CSE2009 – Soft Computin
 
 ---
 
-## 🚀 Installation & Requirements
+## Installation & Requirements
 
 Ensure you have Python 3.8+ installed. Install the dependencies via:
 
@@ -40,7 +38,7 @@ pip install -r requirements.txt
 
 ---
 
-## 💻 Usage
+## Usage
 
 ### 1. Standalone Binary Codec (`wavelet_codec.py`)
 
@@ -70,18 +68,8 @@ python wavelwt.py
 
 ---
 
-## 📊 Experimental Results Summary
+## Experimental Results Summary
 
 - **Wavelet Selection**: `db2` and `db4` outperform `db1` (Haar), preventing blocking artifacts and achieving higher PSNR and SSIM.
 - **Small-Image Advantage over JPEG**: At low resolutions ($64 \times 64$), the wavelet framework sustains high compression ratios ($\text{CR} \approx 13.37\times$), whereas JPEG drops to $\approx 5.35\times$ due to fixed JFIF header overhead.
 - **Physical Disk Compression**: Reaches up to **$24.33\times$** real disk compression ratio ($513\text{ KB} \to 21.1\text{ KB}$) with $\text{PSNR} > 34\text{ dB}$.
-
----
-
-## 👥 Authors
-- **Piyush Puru**
-- **Vidharbh Kr. Tyagi**
-- **Neer Malik**
-- **Piyush Som**
-
-*School of Computer Science and Engineering (SCOPE), VIT-AP University (2025–2026)*
